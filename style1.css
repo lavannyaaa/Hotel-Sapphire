@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(bg3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay; 
+    background-color: rgba(0, 0, 0, 0.3);
+    min-height: 100vh;
+    max-width: 100vw;
+    font-family: "Montserrat", sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    flex-wrap: nowrap;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.name{
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman'
+     serif;
+}
+
+.hero-section {
+    background-image: url(img.jpg);
+    background-size: cover; 
+    background-blend-mode: overlay; 
+    background-color: rgba(0, 0, 0, 0.5);
+    min-height: 100vh;
+    max-width: 100vw;
+    position: relative;
+    text-align: center;
+}
+
+.hero-text {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.hero-text > h1 {
+    font-size: 40px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.hero-text > p {
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.book-btn,
+.know-btn {
+    background-color: rgb(249, 176, 176);
+    font-size: 15px;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.about-sectn {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.abt-us, 
+.Form-heading,
+.room-heading {
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 10px;
+}
+
+.know-btn-container {
+    text-align: center;
+}
+
+ul li {
+    list-style: none;
+}
+
+.fa-solid {
+    margin-right: 10px;
+}
+
+.about-us {
+    width: 50%;
+}
+
+.room-type-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding: 0px 20px;
+    margin-top: 20px;
+}
+
+.room-images img {
+    width: 100%;
+}
+
+.room-list h4 {
+    font-size: 20px;
+}
+
+.help-btn {
+    background-color: sienna;
+    padding: 10px;
+    width: fit-content;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.help-btn h4 {
+    color: white;
+    letter-spacing: 2px;
+    cursor: pointer;
+    margin: 0px;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    margin: 30px 0px;
+    border: 2px solid rgb(111, 111, 111);
+    border-radius: 15px;
+    width: max-content;
+    padding: 20px;
+}
+
+label {
+    font-size: 20px;
+    margin: 5px;
+}
+
+input, select {
+    padding: 5px;
+    margin: 5px;
+    font-size: 15px;
+}
+
+.image {
+    border-radius: 10px;
+}
+
+.room-list {
+    display: flex;
+    max-width: fit-content;
+    text-align: center;
+}
+
+.room {
+    padding: 20px;
+}
+
+.room-list {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap; 
+    text-align: center;
+    max-width: 100%;
+}
+
+.room {
+    width: 450px; 
+    margin: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.room h4 {
+    font-size: 20px; 
+    margin-bottom: 10px; 
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 200px; 
+    overflow: hidden; 
+}
+
+.image-container img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    transition: opacity 0.3s ease; 
+}
+
+.image-container .Info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease; 
+    padding: 10px; 
+    text-align: center;
+    font-size: 15px; 
+}
+
+.image-container:hover .Info {
+    opacity: 1; 
+}
+
+.tag {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 18px;
+    margin: 10px;
+}
+
+@media only screen and (min-width: 501px) and (max-width: 980px) {
+    .hero-text > h1 {
+        font-size: 25px;
+    }
+
+    .hero-text > p {
+        font-size: 15px;
+    }
+
+    .room-images img {
+        width: 400px;
+        height: 200px;
+    }
+}
